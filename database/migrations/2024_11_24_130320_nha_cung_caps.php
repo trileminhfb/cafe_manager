@@ -15,7 +15,6 @@ return new class extends Migration
             $table->string('so_dien_thoai');
             $table->string('dia_chi');
             $table->integer('tinh_trang')->default(status_nha_cung_caps::AVAILABLE);
-            $table->string('ghi_chu');
         });
     }
 
