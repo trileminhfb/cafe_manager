@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('ma_nhap_kho');
             $table->integer('tong_tien');
             $table->integer('tinh_trang')->default(status_nhap_khos::WAITING);
-            $table->string('ghi_chu');
+            $table->string('ghi_chu')->nullable();
         });
     }
 
