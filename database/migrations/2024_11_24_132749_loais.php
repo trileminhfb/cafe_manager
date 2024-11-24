@@ -13,7 +13,7 @@ return new class extends Migration
             $table->id();
             $table->string('ten_loai');
             $table->string('hinh_anh')->nullable();
-            $table->integer('tinh_trang')->default(status_loais::AVAILABLE)->nullable();
+            $table->integer('tinh_trang')->default(status_loais::AVAILABLE);
         });
     }
 
