@@ -13,7 +13,7 @@ return new class extends Migration
             $table->id();
             $table->integer('id_chuc_vu');
             $table->string('ho_va_ten');
-            $table->string('so_dien_thoai');
+            $table->string('so_dien_thoai')->unique();
             $table->string('dia_chi');
             $table->integer('tinh_trang')->default(status_nhan_viens::AVAILABLE);
         });
