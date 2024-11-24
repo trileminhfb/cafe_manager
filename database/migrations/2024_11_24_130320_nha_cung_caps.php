@@ -12,7 +12,7 @@ return new class extends Migration
         Schema::create('nha_cung_caps', function (Blueprint $table) {
             $table->id();
             $table->string('ten_nha_cung_cap');
-            $table->string('so_dien_thoai');
+            $table->string('so_dien_thoai')->unique();
             $table->string('dia_chi');
             $table->integer('tinh_trang')->default(status_nha_cung_caps::AVAILABLE);
         });
