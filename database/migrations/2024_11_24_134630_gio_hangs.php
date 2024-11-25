@@ -11,10 +11,10 @@ return new class extends Migration
         Schema::create('gio_hangs', function (Blueprint $table) {
             $table->id();
             $table->integer('id_san_pham');
-            $table->integer('id_khach_hang');
             $table->integer('so_luong_mua');
             $table->integer('don_gia_mua');
             $table->integer('thanh_tien');
+            $table->string('ghi_chu')->nullable();
         });
     }
 
