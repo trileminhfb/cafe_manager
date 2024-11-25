@@ -11,6 +11,7 @@ return new class extends Migration
         Schema::create('khach_hangs', function (Blueprint $table) {
             $table->id();
             $table->string('ten_khach_hang');
+            $table->integer('id_dia_chi');
             $table->string('email')->unique();
             $table->string('password');
             $table->string('so_dien_thoai')->nullable()->unique();
