@@ -11,8 +11,6 @@ return new class extends Migration
         Schema::create('dia_chis', function (Blueprint $table) {
             $table->id();
             $table->integer('id_khach_hang');
-            $table->string('ten_nguoi_nhan');
-            $table->string('so_dien_thoai');
             $table->string('dia_chi');
         });
     }
